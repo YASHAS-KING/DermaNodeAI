@@ -1,49 +1,51 @@
 # DermaNode AI
 
-Early Skin Cancer Detection using EfficientNet-B3 and Explainable AI
+Early Skin Cancer Detection using Deep Learning and Explainable AI
 
 ## Overview
 
-DermaNode AI is a computer vision system designed for early dermatological screening. The model classifies dermoscopic images into seven lesion categories using transfer learning on the HAM10000 dataset.
+DermaNode AI is a computer vision system for early dermatological screening. The model uses transfer learning with EfficientNet-B3 to classify dermoscopic images into seven skin lesion categories from the HAM10000 dataset.
+
+## Features
+
+* 7-Class Skin Lesion Classification
+* EfficientNet-B3 Transfer Learning
+* Class Imbalance Handling
+* Data Augmentation Pipeline
+* Grad-CAM Explainability
+* FastAPI-Ready Deployment Pipeline
 
 ## Dataset
 
 HAM10000 Dataset
 
-* 10,015 Dermoscopic Images
-* 7 Skin Lesion Classes
-* Publicly Available Medical Imaging Dataset
+* 10,015 dermoscopic images
+* 7 lesion categories
+* Public medical imaging benchmark
 
-## Model Architecture
+## Model
 
-* EfficientNet-B3
-* Transfer Learning
-* Data Augmentation
-* Class Imbalance Handling
-* Grad-CAM Explainability
+Architecture:
+EfficientNet-B3 + Global Average Pooling + Dropout + Softmax(7)
 
 ## Results
 
 * Validation Accuracy: ~85%
-* 7-Class Classification
-* Real-Time Inference Pipeline
+* Multi-class Classification
+* Explainable Predictions using Grad-CAM
 
 ## Technology Stack
 
-* TensorFlow
-* EfficientNet-B3
-* FastAPI
-* Python
-* NumPy
-* Pandas
+Python • TensorFlow • EfficientNet • NumPy • Pandas • Scikit-Learn
 
 ## Future Work
 
-* Clinical-grade validation
-* Multi-modal diagnosis support
-* Mobile deployment
-* Federated learning support
+* Clinical Validation
+* Mobile Deployment
+* FastAPI Inference Service
+* Multi-modal Dermatology Assistant
 
 ## Disclaimer
 
-This project is intended for educational and research purposes and should not be used as a substitute for professional medical diagnosis.
+This project is intended for educational and research purposes only and is not a substitute for professional medical diagnosis.
+
