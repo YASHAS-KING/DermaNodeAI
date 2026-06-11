@@ -1,0 +1,11 @@
+**pycache**/
+.ipynb_checkpoints/
+
+*.h5
+*.keras
+*.pth
+*.ckpt
+
+.env
+
+.DS_Store
